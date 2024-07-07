@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300;400&family=Quicksand&display=swap');
+/* ----------------- CSS RESET ----------------- */
+
+*, *::before, *::after {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #251d29; 
+  color: #fbf5ef;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul, li {
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Create root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+
+/* ------------------- APP ------------------- */
+
+button {
+  background-color: #fbf5ef;
+  color: #251d29;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input {
+  background-color: #fbf5ef;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: .5rem .5rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fbf5ef;
+  max-width: 50%;
+  margin: auto;
+  gap: .5rem;
+}
+
+.row--buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
